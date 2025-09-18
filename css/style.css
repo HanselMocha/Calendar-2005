@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  background-color: black;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 12px;
+  max-width: 900px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.day, .holiday {
+  padding: 15px;
+  text-align: center;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.holiday {
+  background: #ffcccc;
+  font-weight: bold;
+  transition: 0.3s;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+.holiday:hover {
+  background: #ff9999;
+}
+
+.day-name {
+  font-weight: bold;
+  background: #eee;
+}
+
+/* Modal using :target */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+}
+.modal:target {
+  display: block;
+}
+
+.modal-content {
+  background: white;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.close {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.container { max-width: 900px; margin: auto; }
+
+.month-nav-top { text-align: center; margin-bottom: 15px; }
+.month-nav-top a { margin: 0 6px; text-decoration: none; color: #333; background: #eee; padding: 6px 10px; border-radius:6px; }
+.month-nav-top a:hover { background:#ddd; }
+
+.month-nav-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 700px;
+}
+.month-nav-bottom a {
+  padding: 10px 20px;
+  background: #eee;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.month-nav-bottom a:hover {
+  background: #ddd;
+}
+
+
+.day-name.sunday, .day.sunday, .holiday.sunday {
+  color: red;
+}
+
+.banner {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.banner {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
